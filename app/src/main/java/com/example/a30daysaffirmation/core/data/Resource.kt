@@ -1,4 +1,4 @@
-package com.example.a30daysaffirmation.data
+package com.example.a30daysaffirmation.core.data
 
 sealed interface Resource<out T> {
     data class Success<out T>(val data: T): Resource<T>

@@ -1,4 +1,4 @@
-package com.example.a30daysaffirmation.network.model
+package com.example.a30daysaffirmation.core.network.model
 
 import com.google.gson.annotations.SerializedName
 

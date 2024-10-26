@@ -1,7 +1,7 @@
-package com.example.a30daysaffirmation.network
+package com.example.a30daysaffirmation.core.network
 
-import com.example.a30daysaffirmation.network.model.PhotoResponse
-import com.example.a30daysaffirmation.network.model.PostResponse
+import com.example.a30daysaffirmation.core.network.model.PhotoResponse
+import com.example.a30daysaffirmation.core.network.model.PostResponse
 import retrofit2.http.GET
 
 interface AffirmationService {

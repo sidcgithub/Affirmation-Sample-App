@@ -1,4 +1,4 @@
-package com.example.a30daysaffirmation.ui.theme
+package com.example.a30daysaffirmation.core.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

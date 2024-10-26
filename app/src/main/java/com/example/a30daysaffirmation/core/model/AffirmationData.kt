@@ -1,4 +1,4 @@
-package com.example.a30daysaffirmation.model
+package com.example.a30daysaffirmation.core.model
 
 data class AffirmationData(
     val id: Int,

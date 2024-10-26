@@ -1,9 +1,9 @@
-package com.example.a30daysaffirmation.data
+package com.example.a30daysaffirmation.core.data
 
-import com.example.a30daysaffirmation.model.AffirmationData
-import com.example.a30daysaffirmation.network.AffirmationService
-import com.example.a30daysaffirmation.network.model.PhotoResponse
-import com.example.a30daysaffirmation.network.model.PostResponse
+import com.example.a30daysaffirmation.core.model.AffirmationData
+import com.example.a30daysaffirmation.core.network.AffirmationService
+import com.example.a30daysaffirmation.core.network.model.PhotoResponse
+import com.example.a30daysaffirmation.core.network.model.PostResponse
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -24,8 +24,6 @@ class AffirmationRepositoryImpl @Inject constructor(val service: AffirmationServ
             }
 
             try {
-
-
                 val results = awaitAll(deferredPosts, deferredPhotoResponse)
                 val postResponse = results[0] as List<PostResponse>
                 val photoResponse = results[1] as List<PhotoResponse>
@@ -44,7 +42,5 @@ class AffirmationRepositoryImpl @Inject constructor(val service: AffirmationServ
             } catch (e: Exception) {
                 emit(Resource.Error<List<AffirmationData>>(message = "Error!"))
             }
-
-
         }
 }

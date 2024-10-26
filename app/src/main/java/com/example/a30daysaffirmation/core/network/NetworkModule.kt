@@ -1,4 +1,4 @@
-package com.example.a30daysaffirmation.network
+package com.example.a30daysaffirmation.core.network
 
 import dagger.Module
 import dagger.Provides
